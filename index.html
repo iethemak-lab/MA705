@@ -56,10 +56,22 @@
       overflow: hidden;
     }
 
-    model-viewer {
-      width: 100%;
-      height: 72vh;
-      background: #eeeeee;
+    <model-viewer
+  src="model.glb"
+  ios-src="model.usdz"
+  alt="Astoral 3D ürün modeli"
+  ar
+  ar-modes="scene-viewer webxr quick-look"
+  camera-controls
+  touch-action="pan-y"
+  auto-rotate
+  shadow-intensity="1.5"
+  exposure="0.55"
+  environment-image="legacy"
+  bounds="tight"
+  camera-target="auto auto auto"
+  camera-orbit="45deg 65deg auto"
+  field-of-view="35deg">
     }
 
     .info-card {
@@ -133,9 +145,9 @@
         camera-controls
         touch-action="pan-y"
         auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        environment-image="neutral"
+        shadow-intensity="1.5"
+        exposure="0,55"
+        environment-image="legacy"
         camera-orbit="45deg 65deg auto"
         field-of-view="35deg">
 
